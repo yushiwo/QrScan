@@ -2,7 +2,11 @@
 <img src="https://github.com/yushiwo/QrScan/blob/master/picture/test.gif?raw=true"/>
 
 ## 使用  
+* build.gradle配置  
 
+```
+compile 'com.netease.scan:lib-qr-scan:1.0.0'
+```
 * AndroidManifest配置
 
 ```
@@ -53,7 +57,7 @@ public class MyApplication extends Application {
     }
 }
 ```
-* 启动组件  
+* 启动组件相关方法（在QrScan.java类中已经提供）  
 	* 开启扫描界面  
 	
 	```
