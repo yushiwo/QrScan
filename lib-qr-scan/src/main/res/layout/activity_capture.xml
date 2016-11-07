@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/capture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- 全局预览 -->
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+
+        <!-- 扫描框 -->
+        <com.netease.scan.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/capture_select_from_gallery_tv"
+            android:visibility="gone"
+            android:text="从手机相册选择"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <!-- 顶部导航栏 -->
+        <RelativeLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            >
+
+            <ImageButton
+                android:id="@+id/capture_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:padding="12dp"
+                android:background="@drawable/selector_capture_btn"
+                android:src="@drawable/icon_back_white" />
+
+            <TextView
+                android:id="@+id/capture_title_txv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/capture_back_btn"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

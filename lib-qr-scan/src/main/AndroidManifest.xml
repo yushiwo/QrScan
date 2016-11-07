@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.netease.scan">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19"/>
+
+</manifest>

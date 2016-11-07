@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewfinderView">
+        <attr name="maskColor" format="color"/>  <!-- 预览遮罩颜色 -->
+        <attr name="angleColor" format="color"/> <!-- 扫描框四角的颜色 -->
+        <attr name="slideIcon" format="reference"></attr> <!-- 扫描框中间移动的图 -->
+    </declare-styleable>
+</resources>
